@@ -6,7 +6,7 @@ Sample backend extra config
 	...
 	"extra_config": {
 		...
-		"github.com/devopsfaith/krakend-circuitbreaker/gobreaker": {
+		"gitlab.com/klikapim/circuitbreaker/gobreaker": {
 			"interval":        60,
 			"timeout":         10,
 			"max_errors":       5,
@@ -25,13 +25,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/luraproject/lura/v2/config"
-	"github.com/luraproject/lura/v2/logging"
 	"github.com/sony/gobreaker"
+	"gitlab.com/klikapim/lura/v2/config"
+	"gitlab.com/klikapim/lura/v2/logging"
 )
 
 // Namespace is the key to use to store and access the custom config data
-const Namespace = "github.com/devopsfaith/krakend-circuitbreaker/gobreaker"
+const Namespace = "gitlab.com/klikapim/circuitbreaker/gobreaker"
 
 // Config is the custom config struct containing the params for the sony/gobreaker package
 type Config struct {

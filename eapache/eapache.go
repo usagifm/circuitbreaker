@@ -6,7 +6,7 @@ Sample backend extra config
 	...
 	"extra_config": {
 		...
-		"github.com/devopsfaith/krakend-circuitbreaker/eapache": {
+		"gitlab.com/klikapim/circuitbreaker/eapache": {
 			"success": 60,
 			"timeout": "10s",
 			"error": 5
@@ -24,11 +24,11 @@ import (
 	"time"
 
 	"github.com/eapache/go-resiliency/breaker"
-	"github.com/luraproject/lura/v2/config"
+	"gitlab.com/klikapim/lura/v2/config"
 )
 
 // Namespace is the key to use to store and access the custom config data
-const Namespace = "github.com/devopsfaith/krakend-circuitbreaker/eapache"
+const Namespace = "gitlab.com/klikapim/circuitbreaker/eapache"
 
 // Config is the custom config struct containing the params for the eapache/go-resiliency/breaker package
 type Config struct {

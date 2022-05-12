@@ -5,7 +5,7 @@ Adding the middleware to your proxy stack
 
 	import (
 		"github.com/devopsfaith/lura/v2/proxy"
-		gobreaker "github.com/devopsfaith/krakend-circuitbreaker/gobreaker/proxy"
+		gobreaker "gitlab.com/klikapim/circuitbreaker/gobreaker/proxy"
 	)
 
 	...
@@ -30,7 +30,7 @@ import (
 	"github.com/luraproject/lura/v2/logging"
 	"github.com/luraproject/lura/v2/proxy"
 
-	gcb "github.com/devopsfaith/krakend-circuitbreaker/v2/gobreaker"
+	gcb "gitlab.com/klikapim/circuitbreaker/v2/gobreaker"
 )
 
 // BackendFactory adds a cb middleware wrapping the internal factory
